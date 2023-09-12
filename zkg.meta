@@ -15,9 +15,9 @@ zkg_version = 2.13.0
 features = spicy-protocol-analyzer
 
 [template_vars]
-name = test
-analyzer = HTTP
-protocol = TCP
-unit_orig = Request
-unit_resp = Reply
+name = zeek-parser-CIFS-COM
+analyzer = CIFS_B
+protocol = UDP
+unit_orig = Packet
+unit_resp = Packet
 
