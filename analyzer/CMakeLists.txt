@@ -1,6 +1,6 @@
 spicy_add_analyzer(
-    NAME HTTP
+    NAME CIFS_B
     PACKAGE_NAME test
-    SOURCES http.spicy http.evt zeek_http.spicy
+    SOURCES cifs_b.spicy cifs_b.evt zeek_cifs_b.spicy
     SCRIPTS __load__.zeek main.zeek dpd.sig
 )
