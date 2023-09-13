@@ -86,7 +86,7 @@ spicyc v1.5.0 (d0bc6053)
 #types	time	addr	string	string	string	string	string	string	string
 1523724456.329519	192.168.1.35	08:00:27:b9:d0:0a	SNG-WIN2K	5.0	0x1003	15.1	0xaa55	(empty)
 1523724487.160319	192.168.1.35	08:00:27:b9:d0:0a	SNG-WIN2K	5.0	0x51003	15.1	0xaa55	(empty)
-1523724541.105258
+1523724541.105258	192.168.1.37	08:00:27:fb:de:c8	SNG-WINNT4	4.0	0x9002	15.1	0xaa55	(empty)
 #close	2023-09-13-02-32-43
 ```
 
