@@ -35,7 +35,7 @@ Compile source code and copy the object files to the following path.
 ```
 ~$ cd ~/zeek-parser-CIFS-COM/analyzer
 ~$ spicyz -o CIFS_B.hlto CIFS_B.spicy CIFS_B.evt
-CIFS_B.hlto will be generated
+# CIFS_B.hlto will be generated
 ~$ cp CIFS_B.hlto /usr/local/zeek/lib/zeek-spicy/modules/
 ```
 
