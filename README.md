@@ -34,7 +34,7 @@ spicyc v1.5.0 (d0bc6053)
 
 ソースコードをコンパイルして、オブジェクトファイルを以下のパスにコピーします。
 ```
-~$ cd /zeek-parser-CIFS-COM/analyzer
+~$ cd ~/zeek-parser-CIFS-COM/analyzer
 ~$ spicyz -o CIFS_B.hlto CIFS_B.spicy CIFS_B.evt
 # CIFS_B.hltoが生成されます
 ~$ cp CIFS_B.hlto /usr/local/zeek/lib/zeek-spicy/modules/
@@ -55,7 +55,7 @@ spicyc v1.5.0 (d0bc6053)
 
 本プラグインを使うことで `cifs.log` が生成されます。
 ```
-~$ cd zeek-parser-CIFS-COM/testing/Traces
+~$ cd ~/zeek-parser-CIFS-COM/testing/Traces
 ~$ zeek -Cr test.pcap /usr/local/zeek/share/zeek/site/main.zeek
 ```
 
