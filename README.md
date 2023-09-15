@@ -4,7 +4,7 @@ English is [here](https://github.com/nttcom/zeek-parser-CIFS-COM/blob/main/READM
 
 ## 概要
 
-Zeek-Parser-CIFS-COMとはCIFS_Bを解析できるZeekプラグインです。
+Zeek-Parser-CIFS-COMとはCIFS Browser Protocolを解析できるZeekプラグインです。
 
 ## 使い方
 
@@ -66,7 +66,7 @@ spicyc v1.5.0 (d0bc6053)
 | --- | --- | --- |
 | ts | time | 通信した時のタイムスタンプ |
 | SrcIP | addr | 送信元IPアドレス  |
-| SrcMAC | string | 送信元macアドレス |
+| SrcMAC | string | 送信元MACアドレス |
 | ServerName | string | サーバーの名前 |
 | OSVersion | string | OSのバージョン |
 | ServerType | string | サーバーのタイプ |
@@ -90,6 +90,6 @@ spicyc v1.5.0 (d0bc6053)
 #close	2023-09-13-02-32-43
 ```
 
-## 関連ソフトウエア
+## 関連ソフトウェア
 
 本プラグインは[OsecT](https://github.com/nttcom/OsecT)で利用されています。
