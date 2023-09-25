@@ -8,6 +8,23 @@ Zeek-Parser-CIFS-COMとはCIFS Browser Protocolを解析できるZeekプラグ�
 
 ## 使い方
 
+### パッケージマネージャ
+
+このスクリプトは[Zeek Package Manger](https://docs.zeek.org/projects/package-manager/en/stable/index.html)用のパッケージとして提供されています。
+
+```
+zkg refresh
+zkg install zeek-parser-CIFS-COM
+```
+
+上記のコマンドを実行した後、本プラグインは利用可能なプラグインに追加されます。
+
+以下の様に本プラグインを使うことで `cifs.log` が生成されます。
+
+```
+zeek -Cr /usr/local/zeek/var/lib/zkg/clones/package/zeek-parser-CIFS-COM/testing/Traces/test.pcap zeek-parser-CIFS-COM
+```
+
 ### マニュアルインストール
 
 本プラグインを利用する前に、Zeek, Spicyがインストールされていることを確認します。
