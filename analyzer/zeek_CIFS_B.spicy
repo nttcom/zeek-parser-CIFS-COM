@@ -1,16 +1,16 @@
 # Set up protocol confirmation/rejection for analyzers, as well as any further
 # Zeek-specific analysis.
 
-module Zeek_CIFS_B;
+module Zeek_CIFS;
 
-import CIFS_B;
+import CIFS;
 import zeek;
 
 # TODO: Protocol analyzers should confirm once they are reasonably sure that
 # they are indeed parsing the right protocol. Pick a unit that's a little bit
 # into the parsing process here.
 #
-# on CIFS_B::SUITABLE_UNIT::%done {
+# on CIFS::SUITABLE_UNIT::%done {
 #     zeek::confirm_protocol();
 # }
 
@@ -19,6 +19,6 @@ on CIFS_B::Request::%error {
     zeek::reject_protocol("error while parsing CIFS_B request");
 }
 
-on CIFS_B::Reply::%error {
+on CIFS::Reply::%error {
     zeek::reject_protocol("error while parsing CIFS_B reply");
 }
