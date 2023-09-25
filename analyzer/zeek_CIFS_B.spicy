@@ -15,10 +15,10 @@ import zeek;
 # }
 
 # Any error bubbling up to the top unit will trigger a protocol rejection.
-on CIFS::Request::%error {
-    zeek::reject_protocol("error while parsing CIFS request");
-}
+# on CIFS::Request::%error {
+#     zeek::reject_protocol("error while parsing CIFS request");
+# }
 
-on CIFS::Reply::%error {
-    zeek::reject_protocol("error while parsing CIFS reply");
-}
+# on CIFS::Reply::%error {
+#     zeek::reject_protocol("error while parsing CIFS reply");
+# }
