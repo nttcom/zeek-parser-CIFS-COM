@@ -190,7 +190,7 @@ function uint16_to_hex(num: int): string
     left = int_to_count(num) / 16;
     
     local res = hex_list[left] +  hex_list[right];
-    return cat(res);
+    return res;
 	}
 
 function del_0(s: string): string
