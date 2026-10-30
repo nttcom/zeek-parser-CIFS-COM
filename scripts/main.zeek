@@ -145,9 +145,12 @@ redef record connection += {
 	cifs: Info &optional;
 };
 
+const cifs_port = { 138/udp };
+
 event zeek_init() &priority=5
 	{
 	Log::create_stream(CIFS::LOG, [$columns = Info, $ev = log_cifs, $path="cifs"]);
+	Analyzer::register_for_ports(Analyzer::ANALYZER_SPICY_CIFS, cifs_port);
 	}
 
 function find_string(s: string): string
@@ -187,7 +190,7 @@ function uint16_to_hex(num: int): string
     left = int_to_count(num) / 16;
     
     local res = hex_list[left] +  hex_list[right];
-    return cat(res);
+    return res;
 	}
 
 function del_0(s: string): string
